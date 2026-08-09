@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2016 Braden Farmer
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <dimen name="tb_icon_size">60dp</dimen>
+    <dimen name="tb_start_menu_width">180dp</dimen>
+    <dimen name="tb_start_menu_height">240dp</dimen>
+    <dimen name="tb_start_menu_height_half">120dp</dimen>
+    <dimen name="tb_start_menu_grid_width">60dp</dimen>
+    <dimen name="tb_start_menu_grid_text_size">11sp</dimen>
+    <dimen name="tb_start_menu_grid_padding">1dp</dimen>
+    <dimen name="tb_start_menu_icon_padding">12dp</dimen>
+    <dimen name="tb_start_menu_no_apps_found_text">10sp</dimen>
+    <dimen name="tb_context_menu_width">240dp</dimen>
+    <dimen name="tb_context_menu_offset">48dp</dimen>
+    <dimen name="tb_context_menu_offset_overflow">24dp</dimen>
+    <dimen name="tb_phone_size_width">320dp</dimen>
+    <dimen name="tb_phone_size_height">480dp</dimen>
+    <dimen name="tb_max_width">@dimen/tb_match_parent</dimen>
+    <dimen name="tb_app_drawer_icon_padding">4dp</dimen>
+    <dimen name="tb_app_drawer_icon_padding_alt">7dp</dimen>
+    <dimen name="tb_base_size_start_plus_divider">65dp</dimen>
+    <dimen name="tb_base_size_collapse_button">28dp</dimen>
+    <dimen name="tb_dashboard_button_size">48dp</dimen>
+    <dimen name="tb_divider_size">5dp</dimen>
+    <dimen name="tb_navbar_buttons_margin">8dp</dimen>
+    <dimen name="tb_toast_y_offset">64dp</dimen>
+    <dimen name="tb_caption_offset">48dp</dimen>
+    <dimen name="tb_desktop_icon_fab_margin">16dp</dimen>
+    <dimen name="tb_systray_size">210dp</dimen>
+    <dimen name="tb_fake_fab_padding">16dp</dimen>
+    <dimen name="tb_settings_icon_size">24dp</dimen>
+    <dimen name="tb_qs_icon_preview_size">32dp</dimen>
+    <dimen name="tb_systray_icon_size">24dp</dimen>
+    <dimen name="tb_systray_icon_size_notifications">26dp</dimen>
+</resources>

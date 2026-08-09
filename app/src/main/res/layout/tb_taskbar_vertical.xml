@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- Collapse button (styled as circle by code) -->
+    <LinearLayout
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="#01000000"
+        android:id="@+id/hide_taskbar_button_layout" >
+        <View
+            android:id="@+id/hide_taskbar_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/tb_blade_handle" />
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_height="4dp"
+        android:layout_width="match_parent" />
+
+    <!-- Systray placeholder (hidden) -->
+    <FrameLayout
+        android:id="@+id/add_systray_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <!-- App icons list -->
+    <ScrollView
+        android:id="@+id/taskbar_scrollview"
+        android:layout_width="@dimen/tb_icon_size"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="false">
+
+            <Space
+                android:id="@+id/whitespace_end"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <LinearLayout
+                android:id="@+id/taskbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="false" />
+
+            <Space
+                android:id="@+id/whitespace_start"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <!-- Divider hidden -->
+            <View
+                android:id="@+id/divider"
+                android:layout_height="0dp"
+                android:layout_width="0dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Navbar buttons (kept for compatibility, hidden) -->
+    <LinearLayout
+        android:id="@+id/navbar_buttons"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView android:id="@+id/button_recents" android:layout_height="@dimen/tb_icon_size" android:layout_width="match_parent" android:visibility="gone"/>
+        <ImageView android:id="@+id/button_home" android:layout_height="@dimen/tb_icon_size" android:layout_width="match_parent" android:visibility="gone"/>
+        <ImageView android:id="@+id/button_back" android:layout_height="@dimen/tb_icon_size" android:layout_width="match_parent" android:visibility="gone"/>
+    </LinearLayout>
+
+    <!-- Dashboard button (hidden) -->
+    <FrameLayout
+        android:id="@+id/dashboard_button"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:visibility="gone">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:id="@+id/square1" android:layout_width="0dp" android:layout_height="0dp"/>
+                <View android:id="@+id/square2" android:layout_width="0dp" android:layout_height="0dp"/>
+                <View android:id="@+id/square3" android:layout_width="0dp" android:layout_height="0dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:id="@+id/square4" android:layout_width="0dp" android:layout_height="0dp"/>
+                <View android:id="@+id/square5" android:layout_width="0dp" android:layout_height="0dp"/>
+                <View android:id="@+id/square6" android:layout_width="0dp" android:layout_height="0dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Start button (all apps) hidden in vertical mode -->
+    <ImageView
+        android:id="@+id/start_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+    <Space
+        android:id="@+id/space_alt"
+        android:layout_height="4dp"
+        android:layout_width="match_parent" />
+
+    <!-- Alt collapse button -->
+    <LinearLayout
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="#01000000"
+        android:id="@+id/hide_taskbar_button_layout_alt" >
+        <View
+            android:id="@+id/hide_taskbar_button_alt"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/tb_blade_handle" />
+    </LinearLayout>
+
+</LinearLayout>
